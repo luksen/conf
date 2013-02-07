@@ -32,6 +32,7 @@ rmln molokai.vim .vim/colors/molokai.vim
 rmln i3.hogship .config/i3/config hogship
 rmln i3.dinghy .config/i3/config dinghy
 rmln i3status.hogship .config/i3status/config hogship
+rmln i3status.dinghy .config/i3status/config dinghy
 # bash
 rmln bashrc .bashrc
 # zsh
