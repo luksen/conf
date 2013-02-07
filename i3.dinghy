@@ -1,0 +1,126 @@
+#modkey
+set $mod Mod1
+
+# font for window titles. ISO 10646 = Unicode
+font xft:DejaVu Sans 9
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start programms
+bindsym $mod+Return exec gnome-terminal
+bindsym $mod+w exec tools/rungoto.sh thunderbird
+bindsym $mod+e exec dwb
+bindsym $mod+r exec i3-dmenu-desktop
+
+# border
+bindsym $mod+z border 1pixel
+bindsym $mod+Shift+Z border normal
+new_window normal
+for_window [class="Gnome-terminal"] border 1pixel
+for_window [class="Dwb"] border 1pixel
+for_window [class="Thunderbird"] border none
+for_window [class="(?i)gimp*"] border 1pixel
+
+# mail to workspace 0
+assign [class="Thunderbird"] 0: ✉
+
+# volume control
+bindcode 122 exec amixer -q set Master 5%-
+bindcode 123 exec amixer -q set Master 5%+
+
+# brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 -steps 1
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 -steps 1
+
+# lock screen
+bindsym XF86ScreenSaver exec "i3lock -d -c 000000"
+# screen off
+bindsym XF86Launch1 exec "xset dpms force off"
+
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+H move left
+bindsym $mod+Shift+J move down
+bindsym $mod+Shift+K move up
+bindsym $mod+Shift+L move right
+
+# resize window (you can also use the mouse for that)
+bindsym $mod+m mode "resize"
+
+mode "resize" {
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym h resize grow   left 5 px or 5 ppt
+    bindsym j resize grow   down 5 px or 5 ppt
+    bindsym k resize grow   up 5 px or 5 ppt
+    bindsym l resize grow   right 5 px or 5 ppt
+    bindsym $mod+h resize shrink   right 5 px or 5 ppt
+    bindsym $mod+j resize shrink   up 5 px or 5 ppt
+    bindsym $mod+k resize shrink   down 5 px or 5 ppt
+    bindsym $mod+l resize shrink   left 5 px or 5 ppt
+}
+
+# split in horizontal orientation
+bindsym $mod+c split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# change container layout (stacked, tabbed, default)
+bindsym $mod+o layout stacking
+bindsym $mod+i layout tabbed
+bindsym $mod+u layout default
+
+# enter fullscreen mode for the focused container
+bindsym $mod+p fullscreen
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+y focus parent
+
+# focus the child container
+bindsym $mod+x focus child
+
+# switch to workspace
+bindsym $mod+a workspace 1: a
+bindsym $mod+s workspace 2: s
+bindsym $mod+d workspace 3: d
+bindsym $mod+f workspace 4: �
+bindsym $mod+g workspace 5: g
+
+# move focused container to workspace
+bindsym $mod+Shift+a move workspace 1: a
+bindsym $mod+Shift+s move workspace 2: s
+bindsym $mod+Shift+d move workspace 3: d
+bindsym $mod+Shift+f move workspace 4: �
+bindsym $mod+Shift+g move workspace 5: g
+
+# reload the configuration file
+bindsym $mod+Shift+C reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+R restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+E exit
+
+# Start i3bar
+bar {
+    status_command i3status
+    #status_command /home/luki/proj/snot/snoti3.sh
+    #hide_numbers yes
+}
+
+exec feh --bg-center 
