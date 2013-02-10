@@ -28,6 +28,7 @@ function rmln {
 # vim
 rmln vimrc .vimrc
 rmln molokai.vim .vim/colors/molokai.vim
+rmln wombat256mod.vim .vim/colors/wombat256mod.vim
 # i3
 rmln i3.hogship .config/i3/config hogship
 rmln i3.dinghy .config/i3/config dinghy

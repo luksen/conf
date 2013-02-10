@@ -100,7 +100,7 @@ set t_Co=256
 set background=dark
 
 "colortheme
-colorscheme molokai
+colorscheme wombat256mod
 
 "syntax high
 syntax on
