@@ -1,6 +1,9 @@
 "----------------
 " misc
 "----------------
+"avoid double autocmds
+autocmd!
+
 "ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
@@ -45,8 +48,8 @@ set iskeyword+=-
 "tabstop every 4 chars
 set tabstop=4
 
-"tabs to spaces
-set expandtab
+"tabs to spaces in python
+autocmd FileType python set expandtab
 
 "but still backspace them like tabs
 set softtabstop=4
@@ -172,6 +175,9 @@ map <leader>n :set <c-r>=&rnu?"":"r"<CR>nu<CR>
 
 "follow tag
 map <leader>t <c-]>
+
+"gofmt
+autocmd FileType go map <leader>f :w<CR>:!gofmt -w %<CR>:e<CR>
 
 
 "---------------
