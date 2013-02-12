@@ -31,24 +31,22 @@ hi StatusLine	ctermfg=230		ctermbg=238		cterm=none		guifg=#ffffd7	guibg=#444444	
 hi VertSplit	ctermfg=238		ctermbg=238		cterm=none		guifg=#444444	guibg=#444444	gui=none
 hi StatusLineNC	ctermfg=241		ctermbg=238		cterm=none		guifg=#857b6f	guibg=#444444	gui=none
 hi LineNr		ctermfg=241		ctermbg=232		cterm=none		guifg=#857b6f	guibg=#080808	gui=none
-hi SpecialKey	ctermfg=241		ctermbg=235		cterm=none		guifg=#626262	guibg=#2b2b2b	gui=none
 hi WarningMsg	ctermfg=203										guifg=#ff5f55
 hi ErrorMsg		ctermfg=196		ctermbg=236		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
-
-" Vim >= 7.0 specific colors
-if version >= 700
 hi CursorLine					ctermbg=236		cterm=none						guibg=#32322f
 hi MatchParen	ctermfg=228		ctermbg=101		cterm=bold		guifg=#eae788	guibg=#857b6f	gui=bold
 hi Pmenu		ctermfg=230		ctermbg=238						guifg=#ffffd7	guibg=#444444
 hi PmenuSel		ctermfg=232		ctermbg=192						guifg=#080808	guibg=#cae982
 hi ColorColumn					ctermbg=0										guibg=#000000
-endif
+hi NonText		ctermfg=236		ctermbg=234		cterm=none
+hi SpecialKey	ctermfg=236		ctermbg=234		cterm=none
 
 " Diff highlighting
 hi DiffAdd						ctermbg=17										guibg=#2a0d6a
 hi DiffDelete	ctermfg=234		ctermbg=60		cterm=none		guifg=#242424	guibg=#3e3969	gui=none
 hi DiffText						ctermbg=53		cterm=none						guibg=#73186e	gui=none
 hi DiffChange					ctermbg=237										guibg=#382a37
+
 
 "hi CursorIM
 "hi Directory
@@ -92,6 +90,6 @@ hi Todo			ctermfg=101		cterm=none		guifg=#857b6f	gui=italic
 " Links
 hi! link FoldColumn		Folded
 hi! link CursorColumn	CursorLine
-hi! link NonText		LineNr
+
 
 " vim:set ts=4 sw=4 noet:

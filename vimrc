@@ -37,9 +37,6 @@ filetype plugin on
 "80 chars per line
 set textwidth=80
 
-"dashes part of word
-set iskeyword+=-
-
 
 "----------------
 " indentation
@@ -108,6 +105,10 @@ syntax on
 "statusline
 set laststatus=2
 set statusline=#%02.2n\ %M[%f]%M%<\ %{HasPaste()}%y%r%=%lx%c%V\ %p%%
+
+"show invisibles
+set list listchars=tab:▏\ ,eol:⬎
+
 
 
 "----------------
