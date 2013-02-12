@@ -8,8 +8,14 @@ order += "disk /"
 order += "ethernet eth0"
 order += "wireless wlan0"
 order += "cpu_usage"
+order += "battery 0"
 order += "time"
 
+battery 0 {
+	format = "%status %percentage %consumption [%remaining]"
+	low_threshold = 10
+	threshold_type = "percentage"
+}
 
 disk "/" {
 	format = "%free"
