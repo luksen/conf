@@ -107,7 +107,7 @@ set laststatus=2
 set statusline=#%02.2n\ %M[%f]%M%<\ %{HasPaste()}%y%r%=%lx%c%V\ %p%%
 
 "show invisibles
-set list listchars=tab:▏\ ,eol:⬎
+set list listchars=tab:›\ ,eol:⬎
 
 
 
