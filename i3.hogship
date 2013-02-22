@@ -11,7 +11,7 @@ floating_modifier $mod
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+w exec bin/rungoto.sh thunderbird Thunderbird
 bindsym $mod+e exec dwb
-bindsym $mod+r exec dmenu_run
+bindsym $mod+r exec i3-dmenu-desktop
 
 # mail
 assign [class="Thunderbird"] 0: mail
