@@ -49,7 +49,7 @@ set tabstop=4
 autocmd FileType python set expandtab
 
 "but still backspace them like tabs
-set softtabstop=4
+autocmd FileType python set softtabstop=4
 
 "Intendation with << and >>
 set shiftwidth=4
