@@ -19,3 +19,4 @@ set -o vi
 export HISTIGNORE="&"
 
 export EDITOR="vim"
+export GOPATH+=:~/go

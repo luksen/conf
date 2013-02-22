@@ -32,8 +32,12 @@ eval $(lesspipe.sh)
 
 # extend PATH
 PATH+=:~/tools
+export PATH
 # vim
-EDITOR=vim
+export EDITOR=vim
+# home go root
+GOPATH+=:~/go
+export GOPATH
 
 # aliases
 alias q='exit'
