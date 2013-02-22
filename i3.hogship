@@ -28,9 +28,9 @@ bindsym $mod+Tab scratchpad show
 bindsym $mod+Shift+Tab move scratchpad
 
 #media keys
-bindcode 171 exec mpc next
-bindcode 172 exec mpc toggle
-bindcode 173 exec mpc prev
+bindcode 171 exec cmus-remote --next
+bindcode 172 exec cmus-remote --pause
+bindcode 173 exec cmus-remote --prev
 
 # kill focused window
 bindsym $mod+q kill
