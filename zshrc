@@ -36,7 +36,7 @@ export PATH
 # vim
 export EDITOR=vim
 # home go root
-GOPATH+=:~/go
+GOPATH=~/go:$GOPATH
 export GOPATH
 
 # aliases
