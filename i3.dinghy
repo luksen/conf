@@ -20,6 +20,7 @@ new_window normal
 for_window [class="Gnome-terminal"] border 1pixel
 for_window [class="Dwb"] border 1pixel
 for_window [class="Thunderbird"] border none
+for_window [class="Firefox"] border none
 for_window [class="(?i)gimp*"] border 1pixel
 
 # mail to workspace 0
@@ -116,8 +117,23 @@ bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
+# colors
+# class					border	back	text	indicator
+client.focused			#87875f	#87875f	#ffffdf	#dfdf87
+client.focused_inactive	#303030	#303030	#949494	#303030
+client.unfocused		#1c1c1c	#1c1c1c	#949494	#1c1c1c
+client.urgent			#ff5f5f	#ff5f5f	#949494	#ff5f5f
+
 # Start i3bar
 bar {
+	colors {
+		background			#1c1c1c
+		statusline			#d0d0d0
+		focused_workspace	#87875f	#87875f	#ffffdf
+		inactive_workspace	#1c1c1c	#1c1c1c	#949494
+		active_workspace	#303030	#303030	#949494
+		urgent_workspace	#ff5f5f	#ff5f5f	#949494
+	}
     status_command i3status
     #status_command /home/luki/proj/snot/snoti3.sh
     #hide_numbers yes
