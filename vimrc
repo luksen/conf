@@ -109,6 +109,10 @@ set statusline=#%02.2n\ %M[%f]%M%<\ %{HasPaste()}%y%r%=%lx%c%V\ %p%%
 "show invisibles
 set list listchars=tab:›\ ,eol:⬎
 
+"show wrapped lines in number column
+set showbreak=\ \ \ +
+set cpoptions+=n
+
 
 
 "----------------
