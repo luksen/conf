@@ -14,14 +14,14 @@ bindsym $mod+e exec dwb
 bindsym $mod+r exec i3-dmenu-desktop
 
 # border
-bindsym $mod+z border 1pixel
-bindsym $mod+Shift+Z border normal
-new_window normal
-for_window [class="Gnome-terminal"] border 1pixel
-for_window [class="Dwb"] border 1pixel
-for_window [class="Thunderbird"] border none
-for_window [class="Firefox"] border none
-for_window [class="(?i)gimp*"] border 1pixel
+bindsym $mod+z border pixel 2
+bindsym $mod+Shift+Z border normal 2
+new_window normal 2
+for_window [class="Gnome-terminal"] border pixel 2
+for_window [class="Dwb"] border pixel 2
+for_window [class="Thunderbird"] border pixel 0
+for_window [class="Firefox"] border pixel 0
+for_window [class="(?i)gimp*"] border pixel 2
 
 # mail to workspace 0
 assign [class="Thunderbird"] 0: ✉
