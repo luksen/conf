@@ -2,26 +2,28 @@
 set $mod Mod1
 
 # font for window titles
-font xft:DejaVu Sans 10
+font xft:DejaVu Sans 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start programms
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+w exec bin/rungoto.sh thunderbird Thunderbird
+bindsym $mod+w exec tools/rungoto.sh thunderbird
 bindsym $mod+e exec dwb
 bindsym $mod+r exec i3-dmenu-desktop
 
-# mail
-assign [class="Thunderbird"] 0: mail
-for_window [class="Thunderbird"] border none
+# border
+bindsym $mod+z border pixel 2
+bindsym $mod+Shift+Z border normal 2
+new_window normal 2
+for_window [class="Thunderbird"] border pixel 0
+for_window [class="Gnome-terminal"] border pixel 2
+for_window [class="Dwb"] border pixel 2
+for_window [class="Firefox"] border pixel 2
 
-# no titlebar for terminals
-for_window [class="Gnome-terminal"] border 1pixel
-# and browsers
-for_window [class="Dwb"] border 1pixel
-for_window [class="Firefox"] border 1pixel
+# mail to workspace 0
+assign [class="Thunderbird"] 0: mail
 
 #scratchpad
 bindsym $mod+Tab scratchpad show
