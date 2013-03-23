@@ -37,6 +37,10 @@ filetype plugin on
 "80 chars per line
 set textwidth=80
 
+"easier []
+nnoremap ü [
+nnoremap + ]
+
 
 "----------------
 " indentation
