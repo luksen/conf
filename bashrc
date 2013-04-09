@@ -20,6 +20,7 @@ alias rip='abcde -d /dev/sr0 -o flac'
 alias gcc='gcc -std=c99'
 alias gote='gnome-terminal'
 alias vih='vim +h +on'
+alias cmus='tmux new -As cmus cmus'
 
 
 set -o vi
