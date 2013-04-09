@@ -10,7 +10,7 @@ floating_modifier $mod
 # start programms
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+w exec tools/rungoto.sh thunderbird
-bindsym $mod+e exec dwb
+bindsym $mod+e exec firefox
 bindsym $mod+r exec i3-dmenu-desktop
 
 # border
