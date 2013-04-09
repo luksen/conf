@@ -155,4 +155,4 @@ bar {
     status_command "/home/luki/projekte/snot/snoti3.sh"
 }
 
-exec feh --bg-center Bilder/wallpaper-1456675.jpg Bilder/wallpaper-orwell.jpg
+exec eval $(cat .fehbg)
