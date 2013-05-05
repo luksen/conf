@@ -10,6 +10,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 "don't try to be compatible with vi
 set nocompatible
 
+"timout escape sequences in insert mode sooner (:h esckeys)
+set timeout timeoutlen=1000 ttimeoutlen=100
+
 "leader key
 let mapleader = "ö"
 
