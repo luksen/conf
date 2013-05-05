@@ -1,5 +1,5 @@
 # If not running interactively, don't do anything
-#[[ $- != *i* ]] && return
+[[ $- != *i* ]] && return
 
 
 #prompt
@@ -12,7 +12,6 @@ green="\[\e[32m\]"
 PS1="$green\w $normal"
 
 
-shopt -s expand_aliases
 #aliases
 alias q='exit'
 alias ls='ls --color=auto'
