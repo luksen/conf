@@ -20,6 +20,7 @@ alias gcc='gcc -std=c99'
 alias gote='gnome-terminal'
 alias vih='vim +h +on'
 alias cmus='tmux new -As cmus cmus'
+function cdgo() { cd ~/go/src/github.com/luksen/$1 }
 
 
 set -o vi
