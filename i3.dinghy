@@ -10,7 +10,7 @@ floating_modifier $mod
 # start programms
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+w exec tools/rungoto.sh thunderbird
-bindsym $mod+e exec dwb
+bindsym $mod+e exec firefox
 bindsym $mod+r exec i3-dmenu-desktop
 
 # border
@@ -20,7 +20,7 @@ new_window normal 2
 for_window [class="Gnome-terminal"] border pixel 2
 for_window [class="Dwb"] border pixel 2
 for_window [class="Thunderbird"] border pixel 0
-for_window [class="Firefox"] border pixel 0
+for_window [class="Firefox"] border pixel 2
 for_window [class="(?i)gimp*"] border pixel 2
 
 # mail to workspace 0
