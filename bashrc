@@ -16,7 +16,12 @@ alias gcc='gcc -std=c99'
 alias gote='gnome-terminal'
 alias vih='vim +h +on'
 alias cmus='tmux new -As cmus cmus'
-function cdgo() { cd ~/go/src/github.com/luksen/$1; }
+
+#shortcut to go sources on github with completion
+godir="$HOME/go/src/github.com/luksen/"
+function cdgo() { cd $godir/$1; }
+function _cdgo() { COMPREPLY=( $(compgen -W "$(ls -Q $godir)" "$2") ); }
+complete -F _cdgo cdgo
 
 
 set -o vi
