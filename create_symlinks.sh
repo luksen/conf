@@ -35,7 +35,7 @@ rmln i3status.hogship .config/i3status/config hogship
 rmln i3status.dinghy .config/i3status/config dinghy
 # bash
 rmln bashrc .bashrc
-#tmux
+# tmux
 rmln tmux.conf .tmux.conf
 # firefox
 rmln userChrome.css .mozilla/firefox/*.default*/chrome/userChrome.css
