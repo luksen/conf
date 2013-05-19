@@ -147,6 +147,8 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 " misc key bindings
 "----------------
 
+"delete around block including header
+map <leader>d daBdd
 
 "small coding helpers
 inoremap <F5> <Esc>A {<Return>}<Esc>O
