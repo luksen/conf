@@ -39,3 +39,5 @@ rmln bashrc .bashrc
 rmln tmux.conf .tmux.conf
 # firefox
 rmln userChrome.css .mozilla/firefox/*.default*/chrome/userChrome.css
+# git
+rmln gitconfig .gitconfig

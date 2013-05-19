@@ -1,0 +1,11 @@
+[user]
+	name = Lukas Senger
+	email = lukas@fridolin.com
+[push]
+	default = tracking
+[credential]
+	helper = cache
+[color]
+	ui = auto
+[core]
+	pager = less -x1,5
