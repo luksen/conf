@@ -1,14 +1,11 @@
 "----------------
 " misc
 "----------------
-"avoid double autocmds
-autocmd!
-
-"ctrlp
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 "don't try to be compatible with vi
 set nocompatible
+
+"avoid double autocmds
+autocmd!
 
 "timout escape sequences in insert mode sooner (:h esckeys)
 set timeout timeoutlen=1000 ttimeoutlen=100
@@ -150,13 +147,6 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 " misc key bindings
 "----------------
 
-"underline single 
-nnoremap <F2> yyp<c-v>$r-
-inoremap <F2> <Esc>yyp<c-v>$r-A
-
-"underline double
-nnoremap <F1> yyp<c-v>$r-yykP<Esc>jjA
-inoremap <F1> <Esc>yyp<c-v>$r-yykP<Esc>jjA
 
 "small coding helpers
 inoremap <F5> <Esc>A {<Return>}<Esc>O
