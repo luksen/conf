@@ -183,6 +183,9 @@ map <leader>n :set <c-r>=&rnu?"":"r"<CR>nu<CR>
 "follow tag
 map <leader>t <c-]>
 
+"replace line by its output as shell command
+map <leader>e :.!sh
+
 "gofmt
 autocmd FileType go map <leader>f :w<CR>:!gofmt -w %<CR>:e<CR>
 
