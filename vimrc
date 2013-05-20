@@ -41,6 +41,9 @@ set textwidth=80
 nnoremap ü [
 nnoremap + ]
 
+"sync after editing file in notes dir
+autocmd VimLeave ~/notes/* !bash ~/notes/up
+
 
 "----------------
 " indentation
