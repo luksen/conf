@@ -189,6 +189,8 @@ map <leader>e :.!sh
 "gofmt
 autocmd FileType go map <leader>f :w<CR>:!gofmt -w %<CR>:e<CR>
 
+map <leader>l :w<CR>:!pdflatex %<CR><CR>
+
 
 "---------------
 " functions
