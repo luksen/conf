@@ -43,6 +43,7 @@ nnoremap + ]
 
 "sync after editing file in notes dir
 autocmd VimLeave ~/notes/* !bash ~/notes/up
+autocmd BufRead ~/notes/* source ~/notes/notes.vim
 
 
 "----------------
