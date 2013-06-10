@@ -16,6 +16,9 @@ let mapleader = "ö"
 "scroll 5 lines ahead
 set scrolloff=5
 
+"remember cursor column over jumps
+set nostartofline
+
 "don't save options in sessions
 set ssop-=options
 
