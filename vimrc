@@ -44,8 +44,7 @@ set textwidth=80
 nnoremap ü [
 nnoremap + ]
 
-"sync after editing file in notes dir
-autocmd VimLeave ~/notes/* !bash ~/notes/up
+"load additional syntax highlighting
 autocmd BufRead ~/notes/* source ~/notes/notes.vim
 
 
