@@ -5,6 +5,8 @@
 #prompt
 normal="\[\e[0m\]"
 green="\[\e[32m\]"
+violet="\[\e[35m\]"
+[[ -n $SSH_TTY ]] && green="$violet"
 PS1="$green\w $normal"
 
 
