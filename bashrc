@@ -18,6 +18,7 @@ alias gcc='gcc -std=c99'
 alias gote='gnome-terminal'
 alias vih='vim +h +on'
 alias cmus='tmux new -As cmus cmus'
+alias feh='feh -.'
 
 #shortcut to go sources on github with completion
 godir="$HOME/go/src/github.com/luksen/"
