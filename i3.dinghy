@@ -143,4 +143,4 @@ bar {
     #hide_numbers yes
 }
 
-exec feh --bg-center 
+exec eval $(<.fehbg)
