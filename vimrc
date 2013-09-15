@@ -47,6 +47,8 @@ nnoremap + ]
 "load additional syntax highlighting
 autocmd BufRead ~/notes/* source ~/notes/notes.vim
 
+"easy comment line joining
+set formatoptions+=j
 
 "----------------
 " indentation
