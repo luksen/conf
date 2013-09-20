@@ -26,6 +26,24 @@ function cdgo() { cd $godir/$1; }
 function _cdgo() { COMPREPLY=( $(compgen -W "$(ls -Q $godir)" "$2") ); }
 complete -F _cdgo cdgo
 
+#note taking
+notedir="$HOME/notes/"
+function note() {
+	if [ -z $1 ]
+	then
+		d=$(pwd)
+		cd $notedir
+		git up
+		cd $d
+	else
+		vim "$notedir/${1}.mkdn"
+	fi
+}
+function _note() {
+	notes=$(ls -t -Q $notedir -I archiv -I config.sh -I notes.vim);
+	COMPREPLY=( $(compgen -W "${notes[@]//.mkdn/}" "$2") );
+}
+complete -F _note note
 
 set -o vi
 export HISTIGNORE="&"
