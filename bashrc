@@ -31,13 +31,14 @@ notedir="$HOME/notes/"
 function note() {
 	if [ -z $1 ]
 	then
-		d=$(pwd)
-		cd $notedir
-		git up
-		cd $d
+		vim "$notedir/misc.mkdn"
 	else
 		vim "$notedir/${1}.mkdn"
 	fi
+	d=$(pwd)
+	cd $notedir
+	git up
+	cd $d
 }
 function _note() {
 	notes=$(ls -t -Q $notedir -I archiv -I config.sh -I notes.vim);
