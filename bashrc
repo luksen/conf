@@ -51,7 +51,9 @@ export HISTIGNORE="&"
 
 export PATH+=:~/tools
 export EDITOR="vim"
+
 export GOPATH=~/go:$GOPATH
+export GOMAXPROCS=4
 
 export LESS="-R"
 eval $(lesspipe.sh)
