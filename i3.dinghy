@@ -35,10 +35,6 @@ assign [class="Thunderbird"] 0: mail
 bindcode 122 exec amixer -q set Master 5%- && ~/tools/volume.sh
 bindcode 123 exec amixer -q set Master 5%+ && ~/tools/volume.sh
 
-# brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 -steps 1
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 -steps 1
-
 # lock screen
 bindsym XF86ScreenSaver exec "i3lock -d -c 000000"
 # screen off
