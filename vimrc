@@ -194,7 +194,16 @@ map <leader>e :.!sh
 "gofmt
 autocmd FileType go map <leader>f :w<CR>:!gofmt -w %<CR>:e<CR>
 
-map <leader>l :w<CR>:!pdflatex %<CR><CR>
+
+"cscope
+map <leader>cs :cs find s <C-R>=expand("<cword>")<CR><CR>
+map <leader>cg :cs find g <C-R>=expand("<cword>")<CR><CR>
+map <leader>cc :cs find c <C-R>=expand("<cword>")<CR><CR>
+map <leader>ct :cs find t <C-R>=expand("<cword>")<CR><CR>
+map <leader>ce :cs find e <C-R>=expand("<cword>")<CR><CR>
+map <leader>cf :cs find f <C-R>=expand("<cfile>")<CR><CR>
+map <leader>ci :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+map <leader>cd :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 
 "---------------
