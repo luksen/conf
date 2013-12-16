@@ -55,7 +55,7 @@ set formatoptions+=j
 "----------------
 
 "tabstop every 4 chars
-set tabstop=4
+set tabstop=8
 
 "tabs to spaces in python
 autocmd FileType python set expandtab
@@ -64,7 +64,7 @@ autocmd FileType python set expandtab
 autocmd FileType python set softtabstop=4
 
 "Intendation with << and >>
-set shiftwidth=4
+set shiftwidth=8
 
 "<> goes to next full tabstop instead 4 forward
 set shiftround
