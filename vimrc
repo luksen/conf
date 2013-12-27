@@ -50,6 +50,9 @@ autocmd BufRead ~/notes/* source ~/notes/notes.vim
 "easy comment line joining
 set formatoptions+=j
 
+"filetype for bash vi mode vim
+autocmd BufRead,BufNewFile bash-fc-* set filetype=sh
+
 "----------------
 " indentation
 "----------------
