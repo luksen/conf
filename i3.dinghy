@@ -18,11 +18,6 @@ bindsym $mod+Tab exec quickswitch.py
 bindsym $mod+z border pixel 2
 bindsym $mod+Shift+Z border normal 2
 new_window pixel 2
-for_window [class="Gnome-terminal"] border pixel 2
-for_window [class="Dwb"] border pixel 2
-for_window [class="Thunderbird"] border pixel 2
-for_window [class="Firefox"] border pixel 2
-for_window [class="(?i)gimp*"] border pixel 2
 
 # mail to workspace 0
 assign [class="Evolution"] 0: mail
