@@ -47,6 +47,13 @@ function _note() {
 }
 complete -F _note note
 
+# helper for cleaning up
+function big() {
+	echo -e "size\tlast modified\t\tfile"
+	echo -e "‾‾‾‾\t‾‾‾‾‾‾‾‾‾‾‾‾‾\t\t‾‾‾‾"
+	du -sh --time $1* | sort -h | tail
+}
+
 
 # settings
 set -o vi
