@@ -21,6 +21,7 @@ alias gote='gnome-terminal'
 alias vih='vim +h +on'
 alias cmus='tmux new -As cmus cmus'
 alias feh='feh -.'
+alias pdflatex='pdflatex -halt-on-error'
 
 
 # shortcut to go sources on github with completion
