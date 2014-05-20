@@ -12,6 +12,8 @@ PS1="$green\w $normal"
 
 # aliases
 alias q='exit'
+alias v='vim'
+alias g='git'
 alias ls='ls --color=auto'
 alias rip='abcde -d /dev/sr0 -o flac'
 alias gcc='gcc -std=c99'
