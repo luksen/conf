@@ -4,7 +4,7 @@
 [push]
 	default = tracking
 [credential]
-	helper = cache
+	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
 [color]
 	ui = auto
 [core]
