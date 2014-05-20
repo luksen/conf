@@ -53,6 +53,9 @@ set formatoptions+=j
 "filetype for bash vi mode vim
 autocmd BufRead,BufNewFile bash-fc-* set filetype=sh
 
+"ultisnips list
+nnoremap <leader>s :call UltiSnips_ListSnippets()<CR>
+
 "----------------
 " indentation
 "----------------
@@ -173,10 +176,10 @@ nnoremap <S-tab> :bprevious<CR>
 nnoremap <C-N> <C-I>
 
 "window movement
-noremap <C-h> :wincmd h<CR>
-noremap <C-j> :wincmd j<CR>
-noremap <C-k> :wincmd k<CR>
-noremap <C-l> :wincmd l<CR>
+nnoremap <C-h> :wincmd h<CR>
+nnoremap <C-j> :wincmd j<CR>
+nnoremap <C-k> :wincmd k<CR>
+nnoremap <C-l> :wincmd l<CR>
 
 " Leader bindings
 " cap word
