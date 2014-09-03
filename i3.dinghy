@@ -146,3 +146,4 @@ bar {
 }
 
 exec eval $(<.fehbg)
+exec compton --config conf/compton
