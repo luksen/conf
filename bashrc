@@ -64,7 +64,7 @@ complete -F _note note
 function big() {
 	echo -e "size\tlast modified\t\tfile"
 	echo -e "‾‾‾‾\t‾‾‾‾‾‾‾‾‾‾‾‾‾\t\t‾‾‾‾"
-	du -sh --time $1* | sort -h | tail
+	find  . -mindepth 1 -maxdepth 1 -true -exec du -sh --time '{}' ';' | sed 's/\.\///' | sort -h | tail
 }
 
 
