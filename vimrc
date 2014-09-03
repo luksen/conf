@@ -222,6 +222,9 @@ map <leader>cf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 map <leader>ci :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 map <leader>cd :cs find d <C-R>=expand("<cword>")<CR><CR>
 
+"buffer finding/switching
+nnoremap <leader>b :ls<CR>:buffer 
+
 
 "---------------
 " functions
