@@ -27,8 +27,8 @@ assign [class="Thunderbird"] 0:mail
 #bindsym $mod+Shift+Tab move scratchpad
 
 # volume control
-bindcode 122 exec amixer -q set Master 5%- && ~/tools/volume.sh
-bindcode 123 exec amixer -q set Master 5%+ && ~/tools/volume.sh
+bindcode 122 exec amixer -q set Master 5%- && killall -USR1 i3status
+bindcode 123 exec amixer -q set Master 5%+ && killall -USR1 i3status
 
 # brightness
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 -steps 1
