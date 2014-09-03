@@ -4,6 +4,10 @@
 "don't try to be compatible with vi
 set nocompatible
 
+"plugins in .vim/bundle/<plugin>
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 "avoid double autocmds
 autocmd!
 
