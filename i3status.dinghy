@@ -12,6 +12,7 @@ order += "ethernet eth0"
 order += "wireless wlan0"
 order += "cpu_usage"
 order += "battery 0"
+order += "volume master"
 order += "time"
 
 battery 0 {
@@ -40,6 +41,13 @@ time {
 }
 
 cpu_usage {
-	format = "CPU: %usage"
+	format = "CPU %usage"
 }
 
+volume master {
+	format = "VOL %volume"
+	format_muted = "VOL -M-"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
