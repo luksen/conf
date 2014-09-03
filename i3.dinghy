@@ -9,7 +9,7 @@ floating_modifier $mod
 
 # start programms
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+w exec tools/rungoto.sh evolution
+bindsym $mod+w exec tools/rungoto.sh thunderbird
 bindsym $mod+e exec firefox
 bindsym $mod+r exec i3-dmenu-desktop
 bindsym $mod+Tab exec quickswitch.py
@@ -20,7 +20,7 @@ bindsym $mod+Shift+Z border normal 2
 new_window pixel 2
 
 # mail to workspace 0
-assign [class="Evolution"] 0: mail
+assign [class="Thunderbird"] 0:mail
 
 #scratchpad
 #bindsym $mod+Tab scratchpad show
