@@ -57,13 +57,18 @@ set formatoptions+=j
 "filetype for bash vi mode vim
 autocmd BufRead,BufNewFile bash-fc-* set filetype=sh
 
-"ultisnips list
-nnoremap <leader>s :call UltiSnips_ListSnippets()<CR>
 "filetype for msmtprc
 autocmd BufRead,BufNewFile .msmtprc set filetype=msmtp
 
 "recognise .md as markdown
 au BufRead,BufNewFile *.md set filetype=markdown
+
+"all swp files in .vim/swp
+set directory=~/.vim/swp/
+
+" Persistent undo
+set undodir=~/.vim/undo//
+set undofile
 
 
 "----------------
@@ -152,9 +157,6 @@ set foldmethod=syntax
 "use indentation for python files
 autocmd FileType python setlocal foldmethod=indent
 
-"only fold two levels
-"set foldnestmax=2
-
 "start with folds open
 set foldlevelstart=99
 
@@ -192,9 +194,6 @@ nnoremap <C-k> :wincmd k<CR>
 nnoremap <C-l> :wincmd l<CR>
 
 " Leader bindings
-" cap word
-map <leader>c viw~
-
 "toggle pastemode
 map <leader>p :set invpaste<CR>
 
@@ -232,6 +231,6 @@ map <leader>cd :cs find d <C-R>=expand("<cword>")<CR><CR>
 function! HasPaste()
     if &paste
         return '[P]'
-    en
-    return ''
+	en
+	return ''
 endfunction
