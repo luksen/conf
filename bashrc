@@ -3,11 +3,17 @@
 
 
 # prompt
+function git_dirty() {
+	(git status --porcelain 2>/dev/null | grep '.*')>/dev/null && echo '*'
+}
+function git_branch() {
+	git branch --no-color 2>/dev/null | sed '/^[^*]/d' | sed "s/\* \(.*\)/[\1$(git_dirty)] /"
+}
 normal="\[\e[0m\]"
 green="\[\e[32m\]"
 violet="\[\e[35m\]"
 [[ -n $SSH_TTY ]] && green="$violet"
-PS1="$green\w $normal"
+PS1="$green\$(git_branch)\w $normal"
 
 
 # aliases
@@ -22,6 +28,10 @@ alias vih='vim +h +on'
 alias cmus='tmux new -As cmus cmus'
 alias feh='feh -.'
 alias pdflatex='pdflatex -halt-on-error'
+
+# completion for g
+source /usr/share/git/completion/git-completion.bash
+__git_complete g __git_main
 
 
 # shortcut to go sources on github with completion
