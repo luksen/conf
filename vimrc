@@ -59,6 +59,12 @@ autocmd BufRead,BufNewFile bash-fc-* set filetype=sh
 
 "ultisnips list
 nnoremap <leader>s :call UltiSnips_ListSnippets()<CR>
+"filetype for msmtprc
+autocmd BufRead,BufNewFile .msmtprc set filetype=msmtp
+
+"recognise .md as markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
 
 "----------------
 " indentation
