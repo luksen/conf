@@ -33,40 +33,8 @@ alias pdflatex='pdflatex -halt-on-error'
 source /usr/share/git/completion/git-completion.bash
 __git_complete g __git_main
 
-
-# shortcut to go sources on github with completion
-godir="$HOME/go/src/github.com/luksen/"
-function cdgo() { cd $godir/$1; }
-function _cdgo() { COMPREPLY=( $(compgen -W "$(ls -Q $godir)" "$2") ); }
-complete -F _cdgo cdgo
-
-# note taking
-notedir="$HOME/notes/"
-function note() {
-	if [ -z $1 ]
-	then
-		vim "$notedir/misc.mkdn"
-	else
-		vim "$notedir/${1}.mkdn"
-	fi
-	d=$(pwd)
-	cd $notedir
-	git up
-	cd $d
-}
-function _note() {
-	notes=$(ls -t -Q $notedir -I archiv -I config.sh -I notes.vim);
-	COMPREPLY=( $(compgen -W "${notes[@]//.mkdn/}" "$2") );
-}
-complete -F _note note
-
-# helper for cleaning up
-function big() {
-	echo -e "size\tlast modified\t\tfile"
-	echo -e "‾‾‾‾\t‾‾‾‾‾‾‾‾‾‾‾‾‾\t\t‾‾‾‾"
-	find "$@" -mindepth 1 -maxdepth 1 -true -exec bash -c 'eval du -sh --time {} 2>/dev/null' ';' | sed 's/\.\///' | sort -h | tail
-}
-
+# include smaller tools and completions
+source ~/tools/tools.sh
 
 # settings
 set -o vi
