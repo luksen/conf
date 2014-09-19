@@ -41,7 +41,9 @@ set -o vi
 export HISTIGNORE="&"
 
 export PATH+=:~/tools
-export PATH+=:/home/luki/.gem/ruby/2.1.0/bin
+export PATH+=:~/.gem/ruby/2.1.0/bin
+export PATH+=:~/go/bin
+export PATH+=:/opt/android-sdk/tools/
 export EDITOR="vim"
 
 export GOPATH=~/go:$GOPATH
