@@ -41,9 +41,6 @@ set backspace=indent,eol,start
 "filetype specific files
 filetype plugin on
 
-"80 chars per line
-set textwidth=80
-
 "easier []
 nnoremap ü [
 nnoremap + ]
@@ -103,7 +100,7 @@ set smarttab
 "----------------
 
 "show textwidth
-set colorcolumn=+0
+set colorcolumn=80
 
 "change terminal title
 set title
