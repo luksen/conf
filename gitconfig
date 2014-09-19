@@ -11,3 +11,4 @@
 	pager = less -x1,5
 [alias]
 	co = checkout
+	ls = log --decorate --all --oneline
