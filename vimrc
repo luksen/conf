@@ -11,7 +11,7 @@ execute pathogen#infect()
 "avoid double autocmds
 autocmd!
 
-"timout escape sequences in insert mode sooner (:h esckeys)
+"timeout escape sequences in insert mode sooner (:h esckeys)
 set timeout timeoutlen=1000 ttimeoutlen=100
 
 "leader key
@@ -45,9 +45,6 @@ filetype plugin on
 nnoremap ü [
 nnoremap + ]
 
-"load additional syntax highlighting
-autocmd BufRead ~/notes/* source ~/notes/notes.vim
-
 "easy comment line joining
 set formatoptions+=j
 
@@ -63,7 +60,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 "all swp files in .vim/swp
 set directory=~/.vim/swp/
 
-" Persistent undo
+"persistent undo
 set undodir=~/.vim/undo//
 set undofile
 
@@ -72,7 +69,7 @@ set undofile
 " indentation
 "----------------
 
-"tabstop every 4 chars
+"tabstop every 8 chars
 set tabstop=8
 
 "tabs to spaces in python
@@ -81,17 +78,17 @@ autocmd FileType python set expandtab
 "but still backspace them like tabs
 autocmd FileType python set softtabstop=4
 
-"Intendation with << and >>
+"intendation with << and >>
 set shiftwidth=8
 
-"<> goes to next full tabstop instead 4 forward
+"<> goes to next full tabstop instead 8 forward
 set shiftround
 
 "try to guess better indentation from code
 set nosmartindent
 filetype indent on
 
-"backspace deletes tab
+"backspace deletes tab even if expanded
 set smarttab
 
 
@@ -131,6 +128,9 @@ colorscheme wombat256mod
 
 "syntax high
 syntax on
+
+"load additional syntax highlighting
+autocmd BufRead ~/notes/* source ~/notes/notes.vim
 
 "statusline
 set laststatus=2
@@ -200,9 +200,6 @@ map <leader>n :set <c-r>=&rnu?"":"r"<CR>nu<CR>
 "follow tag
 map <leader>t <c-]>
 
-"replace line by its output as shell command
-map <leader>e :.!sh
-
 "gofmt
 autocmd FileType go map <leader>f :w<CR>:!gofmt -w %<CR>:e<CR>
 
@@ -227,10 +224,10 @@ nnoremap <leader>b :ls<CR>:buffer
 " functions
 "---------------
 
-"return a string that shows wether pastmode is enabled
+"return a string that shows whether pastemode is enabled
 function! HasPaste()
-    if &paste
-        return '[P]'
+	if &paste
+		return '[P]'
 	en
 	return ''
 endfunction
