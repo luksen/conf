@@ -11,8 +11,8 @@ floating_modifier $mod
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+w exec tools/rungoto.sh thunderbird
 bindsym $mod+e exec firefox
-bindsym $mod+r exec i3-dmenu-desktop
-bindsym $mod+Tab exec quickswitch.py
+bindsym $mod+r exec j4-dmenu-desktop --term="gnome-terminal" --dmenu="rofi -dmenu -p '→ '"
+bindsym $mod+Tab exec rofi -show window
 
 # border
 bindsym $mod+z border pixel 2

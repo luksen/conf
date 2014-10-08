@@ -1,0 +1,8 @@
+rofi.background: #1c1c1c
+rofi.foreground: #d0d0d0
+rofi.highlightbg: #87875f
+rofi.highlightfg: #ffffdf
+rofi.bordercolor: #87875f
+rofi.font: dejavu-sans 10
+rofi.borderwidth: 2
+rofi.terminal: gnome-terminal
