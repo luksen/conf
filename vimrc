@@ -188,6 +188,9 @@ nnoremap <S-tab> :bprevious<CR>
 "traverse jump list (other direction ^o)
 nnoremap <C-N> <C-I>
 
+"jump to mark
+nnoremap ä `
+
 "window movement
 nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-j> :wincmd j<CR>
