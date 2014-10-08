@@ -39,3 +39,5 @@ rmln tmux.conf .tmux.conf
 rmln userChrome.css .mozilla/firefox/*.default*/chrome/userChrome.css
 # git
 rmln gitconfig .gitconfig
+# desktop
+rmln xinitrc .xinitrc
