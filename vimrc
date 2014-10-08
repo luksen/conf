@@ -170,6 +170,10 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 " misc key bindings
 "----------------
 
+"show snippets with ctrl-g
+let g:UltiSnipsListSnippets="<c-g>"
+nnoremap <c-g> :call Page(":call UltiSnips#ListSnippets()")<CR>
+
 "delete around block including header
 map <leader>d daBdd
 
@@ -230,4 +234,18 @@ function! HasPaste()
 		return '[P]'
 	en
 	return ''
+endfunction
+
+"open command messages in scratch window
+function! Page(cmd)
+	redir @z
+	silent execute a:cmd
+	redir END
+	below new
+	put z
+	setlocal buftype=nofile
+	setlocal bufhidden=wipe
+	setlocal noswapfile
+	setlocal nobuflisted
+	normal gg
 endfunction
