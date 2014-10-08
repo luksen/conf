@@ -110,6 +110,8 @@ bindsym $mod+Shift+d move workspace 3:d
 bindsym $mod+Shift+f move workspace 4:f
 bindsym $mod+Shift+g move workspace 5:g
 
+bindsym $mod+Shift+p move container to output VGA1
+
 # outputs to screens
 workspace "1:a" output HDMI1
 workspace "2:s" output HDMI1
