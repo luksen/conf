@@ -64,6 +64,8 @@ set directory=~/.vim/swp/
 set undodir=~/.vim/undo//
 set undofile
 
+"look for ctags file
+set tags=./tags;$HOME
 
 "----------------
 " indentation
