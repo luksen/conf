@@ -64,6 +64,10 @@ set directory=~/.vim/swp/
 set undodir=~/.vim/undo//
 set undofile
 
+"nicer tabcompletion in command mode
+set wildmode=list:longest
+set wildmenu
+
 "automatically yank to selection clipboard
 set clipboard+=unnamed
 
