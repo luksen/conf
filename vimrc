@@ -64,6 +64,9 @@ set directory=~/.vim/swp/
 set undodir=~/.vim/undo//
 set undofile
 
+"automatically yank to selection clipboard
+set clipboard+=unnamed
+
 "external grep command
 set grepprg=grep\ -nH
 
