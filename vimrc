@@ -64,6 +64,9 @@ set directory=~/.vim/swp/
 set undodir=~/.vim/undo//
 set undofile
 
+"external grep command
+set grepprg=grep\ -nH
+
 "look for ctags file
 set tags=./tags;$HOME
 
