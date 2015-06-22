@@ -220,7 +220,7 @@ map <leader>n :set <c-r>=&rnu?"":"r"<CR>nu<CR>
 map <leader>t <c-]>
 
 "gofmt
-autocmd FileType go map <leader>f :w<CR>:!gofmt -w %<CR>:e<CR>
+autocmd FileType go map <leader>f :Fmt<CR>
 
 "pdflatex
 autocmd FileType tex map <leader>l :w<CR>:!pdflatex %<CR><CR>
