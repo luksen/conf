@@ -149,5 +149,5 @@ bar {
 	strip_workspace_numbers yes
 }
 
-exec eval $(<.fehbg)
+exec eval "$(<.fehbg)"
 exec compton --config conf/compton
