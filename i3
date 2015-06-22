@@ -18,6 +18,7 @@ bindsym $mod+Tab exec rofi -show window
 bindsym $mod+z border pixel 2
 bindsym $mod+Shift+Z border normal 2
 new_window pixel 2
+for_window [class="MuPDF"] border normal 2
 
 # mail to workspace 0
 assign [class="Thunderbird"] 0:mail
