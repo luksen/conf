@@ -12,3 +12,4 @@
 [alias]
 	co = checkout
 	ls = log --decorate --all --oneline
+	st = status
