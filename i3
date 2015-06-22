@@ -42,6 +42,7 @@ bindsym XF86Launch1 exec "xset dpms force off"
 
 # kill focused window
 bindsym $mod+q kill
+bindsym --release button2 kill
 
 # change focus
 bindsym $mod+h focus left
