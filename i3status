@@ -7,11 +7,11 @@ general {
 	output_format = "i3bar"
 }
 
-order += "disk /"
 order += "ethernet eth0"
 order += "wireless wlan0"
 order += "cpu_usage"
 order += "battery 0"
+order += "disk /"
 order += "volume master"
 order += "time"
 
