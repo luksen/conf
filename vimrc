@@ -222,6 +222,9 @@ map <leader>t <c-]>
 "gofmt
 autocmd FileType go map <leader>f :Fmt<CR>
 
+"clang format
+autocmd FileType c vmap <leader>f :call ClangFmt()<CR>
+autocmd FileType c nmap <leader>f :%call ClangFmt()<CR>
 
 "cscope
 map <leader>cs :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -261,4 +264,8 @@ function! Page(cmd)
 	setlocal noswapfile
 	setlocal nobuflisted
 	normal gg
+endfunction
+
+function! ClangFmt()
+	pyf /usr/share/clang/clang-format.py
 endfunction
