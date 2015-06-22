@@ -41,3 +41,5 @@ rmln userChrome.css .mozilla/firefox/*.default*/chrome/userChrome.css
 rmln gitconfig .gitconfig
 # desktop
 rmln xinitrc .xinitrc
+# gnome-terminal
+rmln gnome-terminal.xml .gconf/apps/gnome-terminal/profiles/Default/%gconf.xml
