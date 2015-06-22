@@ -222,8 +222,6 @@ map <leader>t <c-]>
 "gofmt
 autocmd FileType go map <leader>f :Fmt<CR>
 
-"pdflatex
-autocmd FileType tex map <leader>l :w<CR>:!pdflatex %<CR><CR>
 
 "cscope
 map <leader>cs :cs find s <C-R>=expand("<cword>")<CR><CR>
