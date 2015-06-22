@@ -45,6 +45,7 @@ export PATH+=:~/.gem/ruby/2.1.0/bin
 export PATH+=:~/go/bin
 export PATH+=:/opt/android-sdk/tools/
 export EDITOR="vim"
+export PAGER="less"
 
 export GOPATH=~/go:$GOPATH
 export GOMAXPROCS=4
