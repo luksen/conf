@@ -39,3 +39,5 @@ rmln tmux.conf .tmux.conf
 rmln gitconfig .gitconfig
 # desktop
 rmln xinitrc .xinitrc
+# notifications
+rmln dunstrc .config/dunst/dunstrc
