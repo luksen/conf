@@ -28,6 +28,11 @@ function rmln {
 # vim
 rmln vimrc .vimrc
 rmln wombat256mod.vim .vim/colors/wombat256mod.vim
+mkdir -p ~/.vim/swp
+mkdir -p ~/.vim/bundle
+pushd ~/.vim/bundle/
+git clone https://github.com/tpope/vim-pathogen.git
+popd
 # i3
 rmln i3 .config/i3/config
 rmln i3status .config/i3status/config
