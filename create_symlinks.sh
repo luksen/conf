@@ -35,8 +35,6 @@ rmln i3status .config/i3status/config
 rmln bashrc .bashrc
 # tmux
 rmln tmux.conf .tmux.conf
-# firefox
-rmln userChrome.css .mozilla/firefox/*.default*/chrome/userChrome.css
 # git
 rmln gitconfig .gitconfig
 # desktop
