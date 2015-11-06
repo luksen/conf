@@ -8,7 +8,8 @@ font xft:DejaVu Sans 9
 floating_modifier $mod
 
 # start programms
-bindsym $mod+Return exec gnome-terminal
+#bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec sakura
 bindsym $mod+w exec tools/rungoto.sh thunderbird
 bindsym $mod+e exec firefox
 bindsym $mod+r exec j4-dmenu-desktop --term="gnome-terminal" --dmenu="rofi -dmenu -p '→ '"
