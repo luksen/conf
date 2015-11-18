@@ -14,6 +14,9 @@ xcape -e '#66=Escape;#37=Return'
 #source /etc/X11/xinit/xinitrc.d/30-dbus.sh
 export DBUS_SESSION_BUS_ADDRESS
 
+#notifications
+dunst &
+
 # gnome keyring
 export SSH_AUTH_SOCK
 export GPG_AGENT_INFO
