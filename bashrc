@@ -39,6 +39,7 @@ source ~/tools/tools.sh
 # settings
 set -o vi
 export HISTIGNORE="&"
+shopt -s histverify
 
 export PATH+=:~/tools
 export PATH+=:~/.gem/ruby/2.1.0/bin
