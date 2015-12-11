@@ -2,7 +2,9 @@
 " misc
 "----------------
 "don't try to be compatible with vi
-set nocompatible
+if !has('nvim')
+	set nocompatible
+endif
 
 "plugins in .vim/bundle/<plugin>
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -24,7 +26,9 @@ set scrolloff=5
 set nostartofline
 
 "don't save options in sessions
-set ssop-=options
+if !has('nvim')
+	set ssop-=options
+endif
 
 "instead of raising an error ask for confirmation
 set confirm
@@ -33,10 +37,14 @@ set confirm
 set hidden
 
 "use utf-8 as standard
-set encoding=utf-8
+if !has('nvim')
+	set encoding=utf-8
+endif
 
 "backspace over indentation, end of line and sth else
-set backspace=indent,eol,start
+if !has('nvim')
+	set backspace=indent,eol,start
+endif
 
 "filetype specific files
 filetype plugin on
@@ -45,8 +53,10 @@ filetype plugin on
 nnoremap ü [
 nnoremap + ]
 
-"easy comment line joining
-set formatoptions+=j
+"smart formatting (comments and tw)
+if !has('nvim')
+	set formatoptions=tcqj
+endif
 
 "filetype for bash vi mode vim
 autocmd BufRead,BufNewFile bash-fc-* set filetype=sh
@@ -58,7 +68,9 @@ autocmd BufRead,BufNewFile .msmtprc set filetype=msmtp
 au BufRead,BufNewFile *.md set filetype=markdown
 
 "all swp files in .vim/swp
-set directory=~/.vim/swp/
+if !has('nvim')
+	set directory=~/.vim/swp/
+endif
 
 "persistent undo
 set undodir=~/.vim/undo//
@@ -101,7 +113,9 @@ set nosmartindent
 filetype indent on
 
 "backspace deletes tab even if expanded
-set smarttab
+if !has('nvim')
+	set smarttab
+endif
 
 
 "----------------
@@ -145,7 +159,9 @@ syntax on
 autocmd BufRead ~/notes/* source ~/notes/notes.vim
 
 "statusline
-set laststatus=2
+if !has('nvim')
+	set laststatus=2
+endif
 set statusline=#%02.2n\ %M[%f]%M%<\ %{HasPaste()}%y%r%=%lx%c%V\ %p%%
 
 "show invisibles
@@ -211,7 +227,9 @@ nnoremap <C-l> :wincmd l<CR>
 
 " Leader bindings
 "toggle pastemode
-map <leader>p :set invpaste<CR>
+if !has('nvim')
+	map <leader>p :set invpaste<CR>
+endif
 
 "toggle numbers
 map <leader>n :set <c-r>=&rnu?"":"r"<CR>nu<CR>
