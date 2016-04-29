@@ -238,7 +238,7 @@ map <leader>n :set <c-r>=&rnu?"":"r"<CR>nu<CR>
 map <leader>t <c-]>
 
 "gofmt
-autocmd FileType go map <leader>f :Fmt<CR>
+autocmd FileType go map <leader>f :GoFmt<CR>
 
 "clang format
 autocmd FileType c vmap <leader>f :call ClangFmt()<CR>
