@@ -171,6 +171,9 @@ set list listchars=tab:›\
 set showbreak=\ \ \ +
 set cpoptions+=n
 
+"set by default in nvim
+set nohlsearch
+
 
 
 "----------------
