@@ -11,5 +11,6 @@
 	pager = less -x1,5
 [alias]
 	co = checkout
+	ci = commit
 	ls = log --decorate --all --oneline
 	st = status
