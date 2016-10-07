@@ -49,7 +49,7 @@ export PATH+=:/opt/android-sdk/tools/
 export EDITOR="vim"
 export PAGER="less"
 
-export GOPATH=~/go:$GOPATH
+export GOPATH=~/go
 export GOMAXPROCS=4
 
 export LESS="-R"
