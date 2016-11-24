@@ -89,6 +89,9 @@ set grepprg=grep\ -nH
 "look for ctags file
 set tags=./tags;$HOME
 
+"run goimports on save
+let g:go_fmt_command = "goimports"
+
 "----------------
 " indentation
 "----------------
