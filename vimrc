@@ -149,9 +149,6 @@ set ruler
 "256 colors
 set t_Co=256
 
-"use a colortheme for dark backgrounds
-set background=dark
-
 "colortheme
 colorscheme wombat256mod
 
