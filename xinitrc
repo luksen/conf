@@ -17,6 +17,9 @@ export DBUS_SESSION_BUS_ADDRESS
 # notifications
 dunst &
 
+# reddish screen at night
+redshift -t 6500:4500 &
+
 # gnome keyring
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
