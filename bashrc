@@ -41,6 +41,7 @@ source ~/tools/tools.sh
 set -o vi
 export HISTIGNORE="&"
 shopt -s histverify
+shopt -s lithist
 
 export PATH+=:~/tools
 export PATH+=:~/.gem/ruby/2.1.0/bin
