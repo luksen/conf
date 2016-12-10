@@ -20,6 +20,9 @@ dunst &
 # reddish screen at night
 redshift -t 6500:4500 &
 
+# mount usb nibble
+pmount -e sdb1 nibble
+
 # gnome keyring
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
