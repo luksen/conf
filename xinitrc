@@ -8,13 +8,13 @@ xset dpms 0 0 300
 # disable touchpad when typing
 syndaemon -k -R -d
 
-#xcape
+# xcape
 xcape -e '#66=Escape;#37=Return'
 
-#source /etc/X11/xinit/xinitrc.d/30-dbus.sh
+# source /etc/X11/xinit/xinitrc.d/30-dbus.sh
 export DBUS_SESSION_BUS_ADDRESS
 
-#notifications
+# notifications
 dunst &
 
 # gnome keyring
