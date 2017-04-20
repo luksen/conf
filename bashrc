@@ -17,7 +17,7 @@ PS1="$green\$(git_branch)\w $normal"
 
 
 # aliases
-alias vim='nvim'
+[ "$HOSTNAME" == "dinghy" ] && alias vim='nvim'
 alias q='exit'
 alias v='vim'
 alias g='git'
