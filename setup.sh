@@ -46,3 +46,5 @@ rmln gitconfig .gitconfig
 rmln xinitrc .xinitrc
 # notifications
 rmln dunstrc .config/dunst/dunstrc
+# rofi
+rmln rofi .config/rofi/config.rasi

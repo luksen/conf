@@ -1,0 +1,17 @@
+* {
+	focus: #87875f;
+
+	background-color: #1c1c1c;
+	text-color: #d0d0d0;
+}
+
+#window {
+	border: 2px;
+	border-color: @focus;
+	padding: 2px;
+}
+
+#element selected {
+	background-color: @focus;
+	text-color: #ffffdf;
+}

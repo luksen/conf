@@ -12,7 +12,7 @@ floating_modifier $mod
 bindsym $mod+Return exec sakura
 bindsym $mod+w exec tools/rungoto.sh claws-mail
 bindsym $mod+e exec firefox
-bindsym $mod+r exec j4-dmenu-desktop --term="gnome-terminal" --dmenu="rofi -dmenu -p '→ '"
+bindsym $mod+r exec j4-dmenu-desktop --usage-log=".dmenuhistory" --term="sakura" --dmenu="rofi -i -dmenu -p '→ '"
 bindsym $mod+Tab exec rofi -show window
 
 # border
