@@ -10,7 +10,7 @@ floating_modifier $mod
 # start programms
 #bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Return exec sakura
-bindsym $mod+w exec tools/rungoto.sh thunderbird
+bindsym $mod+w exec tools/rungoto.sh claws-mail
 bindsym $mod+e exec firefox
 bindsym $mod+r exec j4-dmenu-desktop --term="gnome-terminal" --dmenu="rofi -dmenu -p '→ '"
 bindsym $mod+Tab exec rofi -show window
@@ -22,7 +22,7 @@ new_window pixel 2
 for_window [class="MuPDF"] border normal 2
 
 # mail to workspace 0
-assign [class="Thunderbird"] 0:mail
+assign [class="Claws"] 0:mail
 
 #scratchpad
 #bindsym $mod+Tab scratchpad show
